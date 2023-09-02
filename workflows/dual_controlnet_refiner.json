@@ -245,40 +245,6 @@
       "bgcolor": "#653"
     },
     {
-      "id": 35,
-      "type": "EmptyLatentImage",
-      "pos": [
-        -453,
-        691
-      ],
-      "size": {
-        "0": 315,
-        "1": 106
-      },
-      "flags": {},
-      "order": 1,
-      "mode": 0,
-      "outputs": [
-        {
-          "name": "LATENT",
-          "type": "LATENT",
-          "links": [
-            71
-          ],
-          "shape": 3,
-          "slot_index": 0
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "EmptyLatentImage"
-      },
-      "widgets_values": [
-        1024,
-        1024,
-        4
-      ]
-    },
-    {
       "id": 9,
       "type": "ControlNetLoader",
       "pos": [
@@ -292,7 +258,7 @@
       "flags": {
         "pinned": false
       },
-      "order": 2,
+      "order": 1,
       "mode": 0,
       "outputs": [
         {
@@ -326,7 +292,7 @@
         "1": 58
       },
       "flags": {},
-      "order": 3,
+      "order": 2,
       "mode": 0,
       "outputs": [
         {
@@ -362,7 +328,7 @@
       "flags": {
         "pinned": false
       },
-      "order": 4,
+      "order": 3,
       "mode": 0,
       "outputs": [
         {
@@ -591,7 +557,7 @@
         "1": 98
       },
       "flags": {},
-      "order": 5,
+      "order": 4,
       "mode": 0,
       "outputs": [
         {
@@ -763,7 +729,7 @@
         "1": 200
       },
       "flags": {},
-      "order": 6,
+      "order": 5,
       "mode": 0,
       "outputs": [
         {
@@ -782,7 +748,7 @@
         "Node name for S&R": "SeargePromptText"
       },
       "widgets_values": [
-        "cinematic photo of a stormtrooper with a hammerhead shaped helmet, shark fin backpack, in a dense alien jungle. Movie still, bokeh, shark teeth around visor"
+        "cinematic photo of neo from the matrix, keanu reeves,  hammerhead shaped hood, black cape, shark fin backpack, on top of a building. Movie still, bokeh, shark teeth around visor, soft green light"
       ],
       "color": "#232",
       "bgcolor": "#353"
@@ -799,7 +765,7 @@
         "1": 200
       },
       "flags": {},
-      "order": 7,
+      "order": 6,
       "mode": 0,
       "outputs": [
         {
@@ -984,32 +950,6 @@
       }
     },
     {
-      "id": 46,
-      "type": "SaveImage",
-      "pos": [
-        1836,
-        230
-      ],
-      "size": [
-        653.9938110351568,
-        734.7520971679689
-      ],
-      "flags": {},
-      "order": 24,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "images",
-          "type": "IMAGE",
-          "link": 82
-        }
-      ],
-      "properties": {},
-      "widgets_values": [
-        "dual_controlnet_refiner"
-      ]
-    },
-    {
       "id": 28,
       "type": "CannyEdgePreprocessor",
       "pos": [
@@ -1105,7 +1045,7 @@
       },
       "widgets_values": [
         "enable",
-        715794855368764,
+        654630066739813,
         "randomize",
         25,
         8,
@@ -1117,6 +1057,66 @@
       ],
       "color": "#223",
       "bgcolor": "#335"
+    },
+    {
+      "id": 35,
+      "type": "EmptyLatentImage",
+      "pos": [
+        -453,
+        691
+      ],
+      "size": {
+        "0": 315,
+        "1": 106
+      },
+      "flags": {},
+      "order": 7,
+      "mode": 0,
+      "outputs": [
+        {
+          "name": "LATENT",
+          "type": "LATENT",
+          "links": [
+            71
+          ],
+          "shape": 3,
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "EmptyLatentImage"
+      },
+      "widgets_values": [
+        1024,
+        1024,
+        2
+      ]
+    },
+    {
+      "id": 46,
+      "type": "SaveImage",
+      "pos": [
+        1836,
+        230
+      ],
+      "size": {
+        "0": 653.9938354492188,
+        "1": 734.7520751953125
+      },
+      "flags": {},
+      "order": 24,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 82
+        }
+      ],
+      "properties": {},
+      "widgets_values": [
+        "dual_controlnet_refiner"
+      ]
     },
     {
       "id": 42,
@@ -1170,12 +1170,12 @@
         "Node name for S&R": "KSamplerAdvanced"
       },
       "widgets_values": [
-        "enable",
-        1053430864868525,
+        "disable",
+        1025019640497295,
         "randomize",
         30,
         8,
-        "euler",
+        "euler_ancestral",
         "normal",
         25,
         10000,
