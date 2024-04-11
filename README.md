@@ -35,14 +35,14 @@ Negative prompt used:
 noise, grit, dull, washed out, low contrast, blurry, deep-fried, hazy, malformed, warped, deformed, grayscale, illustration, painting
 ```
 
-**Workflow:** [./workflow/photography_workflow.json](./workflow/photography_workflow.json)
+**Workflow:** [./workflows/photography_workflow.json](./workflows/photography_workflow.json)
 
 ## Workflow for artistic/painterly styles
 
 While for photographs the refiner helps, the opposite seems true when an artistic style is desired. 
 In this workflow the refiner has been removed and CLIP skip has been added. 
 
-**Workflow:** [./workflow/painterly_style_workflow.json](./workflow/painterly_style_workflow.json)
+**Workflow:** [./workflows/painterly_style_workflow.json](./workflows/painterly_style_workflow.json)
 
 ## Dual ControlNet Workflow
 
